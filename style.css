@@ -1,0 +1,20 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, sans-serif; background: #fff; color: #111; padding: 2rem 1rem; }
+.ap-wrap { max-width: 680px; margin: 0 auto; }
+header h2 { font-size: 20px; font-weight: 700; letter-spacing: -0.5px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+.search-grid { display: grid; grid-template-columns: 2fr 1.5fr 1fr auto; gap: 10px; align-items: flex-end; margin-bottom: 1.5rem; }
+.field { display: flex; flex-direction: column; gap: 4px; }
+.field label { font-size: 11px; font-weight: 600; color: #666; text-transform: uppercase; }
+.field input, .field select { padding: 8px 12px; font-size: 13px; border: 1px solid #ccc; border-radius: 6px; background: #fff; outline: none; }
+.btn-primary { background: #111; color: #fff; border: 1px solid #111; padding: 8px 16px; font-size: 13px; font-weight: 500; border-radius: 6px; cursor: pointer; height: 37px; }
+.btn-primary:hover { background: #333; }
+.btn-secondary { background: transparent; color: #111; border: 1px solid #ccc; padding: 6px 12px; font-size: 12px; border-radius: 6px; cursor: pointer; }
+.btn-secondary:hover { background: #f9f9f9; }
+.job-card { border: 1px solid #eee; border-radius: 8px; padding: 1rem; margin-bottom: 10px; background: #fff; }
+.job-title { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+.job-meta { font-size: 12px; color: #666; display: flex; gap: 12px; flex-wrap: wrap; }
+#search-pagination { display: flex; gap: 10px; justify-content: center; margin-top: 1.5rem; }
+.notice { font-size: 13px; color: #666; padding: 10px 14px; background: #fafafa; border-radius: 6px; margin-bottom: 1rem; border: 1px solid #eee; }
+.spinner { width: 12px; height: 12px; border: 2px solid #ccc; border-top-color: #111; border-radius: 50%; animation: spin .7s linear infinite; display: inline-block; margin-right: 8px; vertical-align: -1px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.empty { text-align: center; padding: 2rem; color: #666; font-size: 13px; }

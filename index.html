@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block 1: Search Core Engine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ap-wrap">
+  <header>
+    <h2>AusbildungPilot — Block 1: Search & API Data Engine</h2>
+  </header>
+
+  <main style="margin-top: 20px;">
+    <div class="search-grid">
+      <div class="field">
+        <label>Occupation</label>
+        <input type="text" id="q-was" value="Pflege" placeholder="e.g. Pflege">
+      </div>
+      <div class="field">
+        <label>Location</label>
+        <input type="text" id="q-wo" value="Berlin" placeholder="e.g. Berlin">
+      </div>
+      <div class="field">
+        <label>Radius</label>
+        <select id="q-umkreis">
+          <option value="10">10 km</option>
+          <option value="25" selected>25 km</option>
+          <option value="50">50 km</option>
+        </select>
+      </div>
+      <button onclick="executeSearch(1)" class="btn-primary">Search Pipeline</button>
+    </div>
+
+    <div id="engine-status" class="notice" style="display:none;"></div>
+    <div id="results-count" style="font-weight: 600; margin-bottom: 10px;"></div>
+    <div id="search-results"></div>
+    <div id="search-pagination"></div>
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
