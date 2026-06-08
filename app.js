@@ -1,7 +1,7 @@
 // Block 1 Core Orchestrator Configuration
 const CONFIG = {
   // Replace with your actual live Supabase Reference URL
-  SUPABASE_EDGE_ENDPOINT: 'https://your-project-id.supabase.co/functions/v1/ba-search-proxy'
+  SUPABASE_EDGE_ENDPOINT: 'https://slaoxauldqnlavyyezkr.supabase.co/functions/v1/ba-search-proxy'
 };
 
 let searchState = {
